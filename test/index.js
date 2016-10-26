@@ -3,7 +3,7 @@ const log = require('../lib/log');
 
 const mocker = new Mock('./test/config-file.js');
 
-setInterval(() => {
+// setInterval(() => {
   console.log(new Date());
   mocker.runService('key').then((result) => {
     log.info('invoke result:', result);
@@ -23,4 +23,4 @@ setInterval(() => {
   }, (err) => {
     log.error(err);
   });
-}, 1000);
+// }, 1000);
