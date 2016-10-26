@@ -33,9 +33,9 @@ module.exports = (log) => ({
       port: 8082,
       routes: {
         '[GET]/api/test': {
-          c: 'c',
-          d: 'd',
-          e: 'e'
+          c: 'cdd',
+          d: 'de',
+          e: 'ef'
         },
         '[GET]/api/site': (ctx) => {
           ctx.body = `siteId111:${ctx.query.id}`;
