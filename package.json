@@ -1,5 +1,5 @@
 {
-  "name": "node-mocker",
+  "name": "n-mocker",
   "version": "0.1.0",
   "description": "mock services and http api with nodejs",
   "main": "lib",
