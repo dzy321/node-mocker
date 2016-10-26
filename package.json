@@ -19,6 +19,9 @@
     "services",
     "http"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": "wy",
   "license": "ISC",
   "bugs": {
