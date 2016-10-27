@@ -1,6 +1,6 @@
 {
   "name": "n-mocker",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "mock services and http api with nodejs",
   "main": "lib",
   "files": [

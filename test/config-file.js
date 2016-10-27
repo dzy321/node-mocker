@@ -1,6 +1,8 @@
 module.exports = (log) => ({
   services: {
     key: 4,
+    date: new Date,
+    bool: false,
     say(word) {
       log('sayaaa');
       return `hello1 ${word}!`;
