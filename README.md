@@ -63,6 +63,13 @@ module.exports = (log) => ({
 });
 ```
 
+## Use
+
+```javascript
+ const mocker = new Mock(path.resolve(process.cwd(), 'config-file.js'));  
+ mocker.start();
+```
+
 ## Workflow
 
 - `npm install`
