@@ -65,6 +65,10 @@ module.exports = (log) => ({
 
 ## Use
 
+```console
+npm i n-mocker
+```
+
 ```javascript
  const mocker = new Mock(path.resolve(process.cwd(), 'config-file.js'));  
  await mocker.start();
