@@ -5,7 +5,7 @@ mock service and http api with nodejs.
 ## Features
 
 - js config file,modify and effective
-- mock service
+- mock services
 - mock http api power by koa2
 
 ## Requirements
@@ -17,12 +17,12 @@ mock service and http api with nodejs.
 ```javascript
 module.exports = (log) => ({
   services: {  // mock service
-    key: 4,
+    key: 4, // return number
     say(word) {
       log('sayaaa');
       return `hello1 ${word}!`;
     },
-    promiseTest(n, k) {
+    promiseTest(n, k) { // return Promise
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve(n + k);
@@ -33,11 +33,11 @@ module.exports = (log) => ({
       throw Error('say2 Error!');
     },
   },
-  proxyServers: [ // mock http
+  proxyServers: [ // mock http,each will start a http server
     {
       port: 8081,
       routes: {
-        '[GET]/api/shops/:shopId': {
+        '[GET]/api/shops/:shopId': { // return a object
           a: 'a',
           b: 'b'
         },
@@ -67,7 +67,7 @@ module.exports = (log) => ({
 
 ```javascript
  const mocker = new Mock(path.resolve(process.cwd(), 'config-file.js'));  
- mocker.start();
+ await mocker.start();
 ```
 
 ## Workflow
