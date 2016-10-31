@@ -15,7 +15,7 @@ mock service and http api with nodejs.
 ## config
 
 ```javascript
-module.exports = (log) => ({
+module.exports = (log) => ({ //log inner mock server
   services: {  // mock service
     key: 4, // return number
     say(word) {
