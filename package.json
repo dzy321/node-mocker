@@ -1,6 +1,6 @@
 {
   "name": "n-mocker",
-  "version": "0.1.7",
+  "version": "0.1.11",
   "description": "mock services and http api with nodejs",
   "main": "lib",
   "files": [
@@ -31,11 +31,13 @@
   "dependencies": {
     "bluebird": "^3.4.6",
     "chokidar": "^1.6.1",
-    "log": "^1.4.0",
-    "worker-farm": "^1.3.1",
+    "http-proxy": "^1.15.2",
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.1.0",
+    "koa-morgan": "^1.0.1",
     "koa-router": "^7.0.1",
-    "koa-morgan": "^1.0.1"
+    "lodash": "^4.17.2",
+    "log": "^1.4.0",
+    "worker-farm": "^1.3.1"
   }
 }

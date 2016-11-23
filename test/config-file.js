@@ -1,10 +1,10 @@
-module.exports = (log) => ({
+module.exports = {
   services: {
     key: 4,
     date: new Date,
     bool: false,
     say(word) {
-      log('sayaaa');
+      console.log('sayaaa1');
       return `hello1 ${word}!`;
     },
     promiseTest(n, k) {
@@ -18,7 +18,7 @@ module.exports = (log) => ({
       throw Error('say2 Error!');
     },
   },
-  proxyServers: [
+  httpServices: [
     {
       port: 8081,
       routes: {
@@ -45,4 +45,4 @@ module.exports = (log) => ({
       },
     },
   ]
-});
+};
