@@ -1,6 +1,6 @@
 # Node-Mocker
 
-![](https://img.shields.io/npm/v/n-mocker.svg?style=flat)
+[![](https://img.shields.io/npm/v/n-mocker.svg?style=flat)](https://www.npmjs.com/package/n-mocker)
 
 mock service and http api with nodejs.
 
