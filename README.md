@@ -1,5 +1,7 @@
 # Node-Mocker
 
+![](https://img.shields.io/npm/v/n-mocker.svg?style=flat)
+
 mock service and http api with nodejs.
 
 ## Features
