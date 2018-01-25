@@ -18,8 +18,7 @@ module.exports = {
       throw Error('say2 Error!');
     },
   },
-  httpServices: {
-    routes: {
+  routes: {
       '[GET]/api/shops/:shopId': {
         a: 'a',
         b: 'b'
@@ -28,5 +27,4 @@ module.exports = {
         ctx.body = ctx.params.itemId;
       },
     },
-  },
 };
